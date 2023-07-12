@@ -11,6 +11,8 @@ button.addEventListener('click', () => {
 });
 
 document.getElementById('modal-close').addEventListener('click', () => {
-  document.getElementById('modal').classList.remove('scale-100', 'rounded-none', 'translate-x-44', '-translate-y-14')
+  document.getElementById('modal').classList.remove('scale-100', 'rounded-none', 'translate-x-44', '-translate-y-14');
+  document.getElementById('modal').classList.add('scale-0', 'rounded-50%', 'translate-x-0', '-translate-y-0');
+
 
 });
