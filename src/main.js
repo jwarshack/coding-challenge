@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function(){
 })
 
 showModal = () => {
-  console.log('hey')
+  
   modal.classList.replace('hide-modal', 'show-modal');
 
   var show = document.getElementsByClassName('show');
