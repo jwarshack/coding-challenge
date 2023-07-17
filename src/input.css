@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.show-modal {
+  @apply scale-100 rounded-none translate-x-44 -translate-y-1/3;
+}
+
+.hide-modal {
+  @apply scale-0 rounded-[50%] translate-x-0 -translate-y-0;
+}
+
+.show-content {
+  @apply opacity-100 -translate-x-0 delay-500 duration-1000;
+}
+
+.hide-content {
+  @apply opacity-0  -translate-x-14 delay-0 duration-300;
+}
+
+.hide {
+  @apply delay-500 opacity-0;
+}
+
+.show {
+  @apply delay-500 opacity-100;
+}
