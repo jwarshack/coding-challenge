@@ -8,8 +8,8 @@ document.addEventListener("DOMContentLoaded", function(){
 
 })
 
-showModal = () => {
-  
+
+button.addEventListener('click', () => {
   modal.classList.replace('hide-modal', 'show-modal');
 
   var show = document.getElementsByClassName('show');
@@ -18,9 +18,7 @@ showModal = () => {
     show[i].classList.replace('show', 'hide');
   }
   content.classList.replace('hide-content', 'show-content');
-}
-
-button.addEventListener('click', showModal);
+});
 
 
 closeBtn.addEventListener('click', (event) => {
@@ -28,6 +26,7 @@ closeBtn.addEventListener('click', (event) => {
     content.classList.replace('show-content', 'hide-content');
     modal.classList.replace('show-modal', 'hide-modal');
     var hide = document.getElementsByClassName('hide');
+    console.log(hide)
     for (let i = 0; i < hide.length; i++) {
       console.log(hide.length)
       console.log(hide[i])
@@ -36,8 +35,6 @@ closeBtn.addEventListener('click', (event) => {
     
   }
 
-  // button.addEventListener('click', showModal);
-  
 
 });
 
